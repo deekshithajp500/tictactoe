@@ -22,5 +22,11 @@ pipeline {
                 sh 'npm test'
             }
         }
+        stage('python') {
+            steps {
+                echo 'tictactoe output'
+                sh 'tictactoe.py'
+            }
+        }
     }
 }

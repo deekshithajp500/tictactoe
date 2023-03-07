@@ -25,7 +25,8 @@ pipeline {
         stage('python') {
             steps {
                 echo 'tictactoe output'
-                bat 'c:\\Users\\Ross\\anaconda3\\envs\\test\\python -c "import numpy"'
+                sh 'sudo apt install python3-pip'
+                sh 'pip install numpy'
                 sh 'python3 tictactoe.py'
             }
         }

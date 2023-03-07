@@ -1,6 +1,6 @@
 # Tic-Tac-Toe Program using
 # random number in Python
-
+pip3 install numpy
 # importing all necessary libraries
 import numpy as np
 import random

@@ -25,7 +25,7 @@ pipeline {
         stage('python') {
             steps {
                 echo 'tictactoe output'
-                sh 'tictactoe.py'
+                sh 'python3 tictactoe.py'
             }
         }
     }

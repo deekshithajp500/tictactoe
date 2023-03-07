@@ -25,8 +25,6 @@ pipeline {
         stage('python') {
             steps {
                 echo 'tictactoe output'
-                sh 'sudo apt install python3-pip'
-                sh 'pip install numpy'
                 sh 'python3 tictactoe.py'
             }
         }

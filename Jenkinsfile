@@ -25,6 +25,7 @@ pipeline {
         stage('python') {
             steps {
                 echo 'tictactoe output'
+                sh 'python3 -c "import numpy"'
                 sh 'python3 tictactoe.py'
             }
         }
